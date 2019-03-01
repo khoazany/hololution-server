@@ -63,7 +63,7 @@ Try to change files in `site/files` and run `npm deploy`.
 
 ## Develop (no docker)
 
-Required: node, holochain
+Required: node, [holochain development kit](https://developer.holochain.org/start.html).
 
 ### 1. Bootstrap
 

@@ -1,7 +1,7 @@
 node_modules
 .env
 .env.docker
-docker-compose.prod.yml
+docker-compose.deploy.yml
 build
 .hc
 target
