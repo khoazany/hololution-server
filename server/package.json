@@ -1,0 +1,20 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "hc package",
+    "dev:run": "hc run -p 8010 --package --persist",
+    "dev": "nodemon -e rs -i bundle.json -x \"npm run\" dev:run",
+    "start": "npm run dev:run # for now"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}

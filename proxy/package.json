@@ -1,0 +1,33 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "bootstrap": "npm i && (cp -n .env.dist .env || true) && (cp -n .env.docker.dist .env.docker || true)",
+    "clean": "del-cli ./build ./coverage",
+    "build": "npm run clean && tsc -p ./config/tsconfig.base.json",
+    "dev": "concurrently -n \"build,run\" \"tsc\" \"nodemon -x node .\"",
+    "start": "node ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@holochain/hc-web-client": "^0.1.0",
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "express-basic-auth": "^1.1.6",
+    "node-fetch": "^2.3.0",
+    "rpc-websockets": "^4.3.5"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.17.0",
+    "@types/express": "^4.16.1",
+    "@types/node": "^11.9.6",
+    "concurrently": "^4.1.0",
+    "del-cli": "^1.1.0",
+    "nodemon": "^1.18.10",
+    "typescript": "^3.3.3333"
+  }
+}

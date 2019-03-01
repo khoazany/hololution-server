@@ -1,0 +1,8 @@
+version: "3"
+services:
+  server:
+    stdin_open: true
+  proxy:
+    env_file: ./proxy/.env.docker
+    ports:
+      - "$PORT:8011"

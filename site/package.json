@@ -1,0 +1,12 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bootstrap": "npm i && (cp -n .env.dist .env || true)",
+    "deploy": "eval $(egrep -v '^#' .env | xargs) scripts/deploy.sh"
+  },
+  "author": "",
+  "license": "ISC"
+}

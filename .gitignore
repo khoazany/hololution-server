@@ -1,0 +1,8 @@
+node_modules
+.env
+.env.docker
+docker-compose.prod.yml
+build
+.hc
+target
+bundle.json

@@ -1,0 +1,20 @@
+{
+  "name": "hololution",
+  "version": "1.0.0",
+  "description": "Every file served by this server is distributed in a holochain network.",
+  "main": "index.js",
+  "scripts": {
+    "bootstrap": "npm i && (cp -n .env.dist .env || true) && (cd proxy && npm run bootstrap) && (cd site && npm run bootstrap)",
+    "dev": "concurrently -n \"server,proxy\" \"cd server && npm run dev\" \"cd proxy && npm run dev\"",
+    "start": "docker-compose -f docker-compose.yml -f docker-compose.local.yml up --build",
+    "deploy-site": "cd site && npm run deploy"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^4.1.0"
+  },
+  "dependencies": {
+    "express-basic-auth": "^1.1.6"
+  }
+}
