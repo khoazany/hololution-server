@@ -59,7 +59,7 @@ npm run deploy-site
 
 Available pages: `http://localhost:8011` and `http://localhost:8011/page.html`
 
-Try to change files in `site/files` and run `npm deploy`.
+Try to change files in `site/files` and run `npm deploy-site`.
 
 ## Develop (no docker)
 
