@@ -7,7 +7,7 @@ Leave an issue and join the [hololution telegram group](https://t.me/hololution)
 
 ## Demo
 
-Find an online demo at [hololution.nmr.io](http://hololution.nmr.io)
+Want a live demo? The [hololution.io](https://hololution.io) website is hosted using this app!
 
 ## Structure
 
